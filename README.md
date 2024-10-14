@@ -4,6 +4,10 @@ This article explores the **Customer Lifetime Value (CLV) Prediction Model** wit
 
 ---
 
+
+![image](https://github.com/user-attachments/assets/3eb6e0c1-5cd2-4a49-bb61-0eb4719126f0)
+
+
 ## **Table of Contents**
 
 1. [Introduction](#introduction)  
@@ -71,6 +75,8 @@ The following table summarizes the key features in the dataset:
 | **Transaction Frequency**  | Number of completed transactions                 |
 | **Warranty Status**        | Active or expired warranty                       |
 
+![image](https://github.com/user-attachments/assets/d9b85d8a-d5aa-42e8-9484-9ecab926ac87)
+
 ---
 
 ## **Exploratory Data Analysis (EDA)**
@@ -83,11 +89,13 @@ The following table summarizes the key features in the dataset:
   - Cars and motorcycles are the most common.  
   - **Commercial vehicles** tend to generate higher CLV due to frequent servicing.
 
+![image](https://github.com/user-attachments/assets/593c53df-0b8b-4037-b75a-721bb79a6594)
+
 ---
 
 ### **Loyalty and Total Spend**
 
-![Total Spend by Customer Loyalty](file-ikoX4qZULqYQQc7zxgFoA5Gx)
+![image](https://github.com/user-attachments/assets/a9f76a44-125d-4a8e-acc4-7626e1f4eeee)
 
 - **Loyal Customers** spend ~300,000 units, compared to ~250,000 units for non-loyal ones.  
   **Insight**: Programs focused on increasing loyalty will significantly impact revenue.
@@ -96,7 +104,7 @@ The following table summarizes the key features in the dataset:
 
 ### **Quarterly Trends in Spending**
 
-![Average Spend by Quarter](file-p3MUtLkLsvqeGfvBXvDPqxKf)
+![image](https://github.com/user-attachments/assets/ad9a5029-5d4b-46c0-bfe7-55ba19be526d)
 
 - **Highest Spend**: Q1 (~255,000 units)  
 - **Lowest Spend**: Q2 (~230,000 units)  
@@ -124,7 +132,7 @@ The following table summarizes the key features in the dataset:
 
 ### **Actual vs Predicted CLV**
 
-![Actual vs Predicted CLV](file-JQGogVvbs6d0YPialFpb78IO)
+![image](https://github.com/user-attachments/assets/8a9b5670-a8c9-4920-8d84-e3195c70783b)
 
 - **Perfect Prediction Line**: The closer the points are to the line, the better the predictions.  
 - **Small Prediction Errors**: Most points align with the line, indicating **high model accuracy**.
@@ -133,26 +141,27 @@ The following table summarizes the key features in the dataset:
 
 ### **Correlation Heatmap with CLV**
 
-![Correlation Heatmap](file-eCZNLUCMX6bb9Q9elNIEPNg6)
+![image](https://github.com/user-attachments/assets/5d5e7c69-d8e0-420e-947d-ae9a93fd7878)
 
-- **Positive Correlation**: Average order value (0.37) strongly impacts predicted CLV.  
+- **Positive Correlation**: Average order value (0.38) strongly impacts predicted CLV.  
   **Insight**: Encouraging larger purchases will **boost lifetime value**.
 
 ---
 
 ### **CLV by Purchase Channel**
 
-![CLV by Purchase Channel](file-ikoX4qZULqYQQc7zxgFoA5Gx)
+![image](https://github.com/user-attachments/assets/1833b767-2362-4ac7-b125-852dce89f074)
 
-- **Dealerships**: Median CLV ~4 million units  
-- **Online Sales**: Median CLV ~3 million units  
-  **Insight**: Focus on **dealerships** to maximize revenue per customer.
+- **Dealerships**: Median CLV ~3 million units
+-  **Direct sales**: Median CLV ~3 million units  
+- **Online Sales**: Median CLV ~2.5 million units  
+  **Insight**: Focus on **dealerships** and  **Direct sales** to maximize revenue per customer.
 
 ---
 
 ### **Sample Customer Predictions**
 
-![Customer Predictions](file-JQGogVvbs6d0YPialFpb78IO)
+![image](https://github.com/user-attachments/assets/5b0cb56a-f0e7-4b97-a1a2-fe9478d16a1d)
 
 - **Example Predictions**:  
   - **Customer 1501**:  
@@ -173,7 +182,7 @@ The following table summarizes the key features in the dataset:
 1. **Focus on High-Value Customers**  
    - Prioritize retaining the **4,000 high-value customers** identified by the model.
 
-2. **Enhance Dealership Services**  
+2. **Enhance Dealership and direct sales Services**  
    - Offer **personalized experiences** to drive higher CLV through dealerships.
 
 3. **Increase Average Order Values**  
@@ -207,11 +216,3 @@ By implementing these recommendations, the business can **boost revenue** and ac
 
 ---
 
-## **How to Share This Report**
-
-1. Open this markdown file on **GitHub**.  
-2. Click **Raw** to display the markdown as plain text.  
-3. Use **Print (Ctrl + P)** and select **Save as PDF**.  
-4. Upload the PDF to GitHub for easy sharing with your team and stakeholders.
-
----
