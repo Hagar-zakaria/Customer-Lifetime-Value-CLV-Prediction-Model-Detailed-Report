@@ -23,26 +23,28 @@ This article explores the **Customer Lifetime Value (CLV) Prediction Model** wit
 ## **Introduction**
 
 Customer Lifetime Value (CLV) is a **key metric** for businesses, especially in the **motor industry**. It helps predict **the total revenue a customer will generate** over their lifetime. With this prediction, companies can:
-- **Identify high-value customers** and focus on retaining them.
-- **Forecast revenue** and plan operations efficiently.
-- **Optimize sales channels** for better customer engagement.
+
+- **Identify high-value customers** and focus on retaining them.  
+- **Forecast revenue** and plan operations efficiently.  
+- **Optimize sales channels** for better customer engagement.  
 
 ---
 
 ## **Objectives**
 
 The main objectives of the CLV prediction model are:  
+
 1. **Predict future spending** by customers to estimate their lifetime value.  
 2. **Segment customers** based on loyalty and spending behavior.  
 3. **Optimize marketing and service strategies** for higher revenue.  
-4. **Compare purchase channels** to identify the most profitable ones.
+4. **Compare purchase channels** to identify the most profitable ones.  
 
 ---
 
 ## **Key Insights**
 
 1. **High-Value Customers are Critical for Revenue**  
-   - Over 80% of the customers in the dataset are classified as **high-value**.  
+   - Over **80%** of the customers in the dataset are classified as **high-value**.  
    - **Focus on loyalty programs** to retain these customers.
 
 2. **Dealerships Outperform Other Channels**  
@@ -58,16 +60,16 @@ The main objectives of the CLV prediction model are:
 
 The following table summarizes the key features in the dataset:
 
-| **Feature**              | **Description**                                  |
-|--------------------------|--------------------------------------------------|
-| **Customer ID**           | Unique identifier for each customer              |
-| **Age**                  | Customer's age                                   |
-| **Vehicle Type**          | Car, truck, motorcycle, or bus                   |
-| **Usage Type**            | Personal or commercial use                       |
-| **Average Order Value**   | Average transaction value                        |
-| **Total Spend**           | Total amount spent by the customer               |
-| **Transaction Frequency** | Number of completed transactions                 |
-| **Warranty Status**       | Active or expired warranty                       |
+| **Feature**               | **Description**                                  |
+|---------------------------|--------------------------------------------------|
+| **Customer ID**            | Unique identifier for each customer              |
+| **Age**                    | Customer's age                                   |
+| **Vehicle Type**           | Car, truck, motorcycle, or bus                   |
+| **Usage Type**             | Personal or commercial use                       |
+| **Average Order Value**    | Average transaction value                        |
+| **Total Spend**            | Total amount spent by the customer               |
+| **Transaction Frequency**  | Number of completed transactions                 |
+| **Warranty Status**        | Active or expired warranty                       |
 
 ---
 
@@ -75,44 +77,41 @@ The following table summarizes the key features in the dataset:
 
 ### **Distribution of Key Features**
 
-![Distribution of Key Features](file-vu5lstRbSM9OTMSCftWC6any)
+![Distribution of Key Features](file-47iPPwQ9rDg6xARNK0Bn8It1)
 
 - **Vehicle Types**:  
-   - Cars and motorcycles are the most common.  
-   - Commercial vehicles tend to generate higher CLV due to frequent servicing.
-
-- **Usage Type**:  
-   - **50% personal and 50% commercial** users—this balanced segmentation allows targeted campaigns for both groups.
+  - Cars and motorcycles are the most common.  
+  - **Commercial vehicles** tend to generate higher CLV due to frequent servicing.
 
 ---
 
 ### **Loyalty and Total Spend**
 
-![Total Spend by Loyalty](file-dEKn9ou2A00L5FlxHuUMFg1R)
+![Total Spend by Customer Loyalty](file-ikoX4qZULqYQQc7zxgFoA5Gx)
 
 - **Loyal Customers** spend ~300,000 units, compared to ~250,000 units for non-loyal ones.  
-   - **Insight**: Programs focused on increasing loyalty will significantly impact revenue.
+  **Insight**: Programs focused on increasing loyalty will significantly impact revenue.
 
 ---
 
 ### **Quarterly Trends in Spending**
 
-![Spending by Quarter](file-ktfb2yybXuWSTIbUxnUzdrgB)
+![Average Spend by Quarter](file-p3MUtLkLsvqeGfvBXvDPqxKf)
 
 - **Highest Spend**: Q1 (~255,000 units)  
 - **Lowest Spend**: Q2 (~230,000 units)  
-   - **Insight**: Launching targeted campaigns in Q1 and Q4 can boost yearly revenue.
+  **Insight**: Launching targeted campaigns in **Q1 and Q4** can boost yearly revenue.
 
 ---
 
 ## **How the Model Works**
 
 1. **Data Preprocessing**:  
-   - We removed **duplicates** and filled **missing values**.  
-   - Numerical values like **Total Spend** and **Transaction Frequency** were standardized.
+   - We **removed duplicates** and filled **missing values**.  
+   - Numerical values like **Total Spend** and **Transaction Frequency** were **standardized**.
 
 2. **Modeling Process**:  
-   - **Random Forest** was chosen due to its ability to capture complex patterns.  
+   - **Random Forest** was chosen due to its ability to capture **complex patterns**.  
    - We used an **80/20 split** between training and testing data to ensure robust evaluation.
 
 3. **Evaluation Metrics**:  
@@ -125,7 +124,7 @@ The following table summarizes the key features in the dataset:
 
 ### **Actual vs Predicted CLV**
 
-![Actual vs Predicted CLV](file-Eh22FKfzkmdfpmAbrdGtMB2Y)
+![Actual vs Predicted CLV](file-JQGogVvbs6d0YPialFpb78IO)
 
 - **Perfect Prediction Line**: The closer the points are to the line, the better the predictions.  
 - **Small Prediction Errors**: Most points align with the line, indicating **high model accuracy**.
@@ -134,38 +133,38 @@ The following table summarizes the key features in the dataset:
 
 ### **Correlation Heatmap with CLV**
 
-![Correlation Heatmap](file-Wro4unUYqxlDmrfCq52ANeLo)
+![Correlation Heatmap](file-eCZNLUCMX6bb9Q9elNIEPNg6)
 
 - **Positive Correlation**: Average order value (0.37) strongly impacts predicted CLV.  
-   **Insight**: Encouraging larger purchases will boost lifetime value.
+  **Insight**: Encouraging larger purchases will **boost lifetime value**.
 
 ---
 
 ### **CLV by Purchase Channel**
 
-![CLV by Channel](file-WMxFJTFqXQKPDrIqYAdWUFSj)
+![CLV by Purchase Channel](file-ikoX4qZULqYQQc7zxgFoA5Gx)
 
 - **Dealerships**: Median CLV ~4 million units  
 - **Online Sales**: Median CLV ~3 million units  
-   **Insight**: Focus on dealerships to maximize revenue per customer.
+  **Insight**: Focus on **dealerships** to maximize revenue per customer.
 
 ---
 
 ### **Sample Customer Predictions**
 
-![Customer Predictions](file-Screenshot 2024-10-13 013122.png)
+![Customer Predictions](file-JQGogVvbs6d0YPialFpb78IO)
 
 - **Example Predictions**:  
-   - **Customer 1501**  
-     - Predicted CLV: 4,321,418 units  
-     - Actual CLV: 4,305,863 units  
-     - **Error**: 15,555 units  
-   - **Customer 705**  
-     - Predicted CLV: 690,662 units  
-     - Actual CLV: 724,346 units  
-     - **Error**: -33,683 units  
+  - **Customer 1501**:  
+    - **Predicted CLV**: 4,321,418 units  
+    - **Actual CLV**: 4,305,863 units  
+    - **Error**: 15,555 units  
+  - **Customer 705**:  
+    - **Predicted CLV**: 690,662 units  
+    - **Actual CLV**: 724,346 units  
+    - **Error**: -33,683 units  
 
-   **Interpretation**: Small prediction errors demonstrate that the model can **reliably forecast future revenue**.
+  **Interpretation**: Small prediction errors demonstrate that the model can **reliably forecast future revenue**.
 
 ---
 
@@ -191,8 +190,9 @@ The following table summarizes the key features in the dataset:
 ## **Conclusion**
 
 The **CLV Prediction Model for the Motor Industry** provides reliable insights into customer behavior, enabling businesses to:
-- **Retain high-value customers** and improve customer satisfaction.
-- **Optimize sales channels** for better profitability.
+
+- **Retain high-value customers** and improve customer satisfaction.  
+- **Optimize sales channels** for better profitability.  
 - **Forecast future revenue** to plan resources effectively.
 
 By implementing these recommendations, the business can **boost revenue** and achieve sustainable growth.
